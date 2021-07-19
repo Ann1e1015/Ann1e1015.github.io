@@ -1,7 +1,7 @@
 {
   "name": "Annie-Blog",
   "version": "1.0.0",
-  "main": "public/index.html",
+  "main": "index.html",
   "repository": "https://github.com/Ann1e1015/Ann1e1015.github.io.git",
   "author": "annie1015 <371046515@qq.com>",
   "license": "MIT",
