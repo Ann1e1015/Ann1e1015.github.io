@@ -8,7 +8,7 @@ app.use(koaStatic(path.join(__dirname, '..', '..')));
 
 app.use(async (ctx) => {
   if (ctx.path === '/' || ctx.path === '') {
-    ctx.redirect('/Ann1e1015.github.io/public/index.html');
+    ctx.redirect('/Ann1e1015.github.io/index.html');
   }
 });
 
