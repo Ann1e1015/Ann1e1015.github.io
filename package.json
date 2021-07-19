@@ -1,16 +1,33 @@
 {
   "name": "Annie-Blog",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "public/index.html",
   "repository": "https://github.com/Ann1e1015/Ann1e1015.github.io.git",
   "author": "annie1015 <371046515@qq.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "npm run build:react",
+    "build:react": "rollup -c --watch",
+    "serve": "node ./server --hot"
+  },
   "devDependencies": {
-    "rollup": "^2.53.2",
     "@babel/cli": "7.1.0",
+    "@babel/core": "7.1.0",
     "@babel/preset-env": "7.1.0",
-    "@babel/preset-react": "7.0.0"
+    "@babel/preset-react": "7.0.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "koa": "^2.13.1",
+    "koa-static": "^5.0.0",
+    "less": "^4.1.1",
+    "postcss": "^8.3.5",
+    "rollup": "^2.53.2",
+    "rollup-plugin-external-globals": "^0.6.1",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.0"
   },
   "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
