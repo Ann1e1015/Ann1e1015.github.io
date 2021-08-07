@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*css 初始化 */
 html,
 body,
@@ -117,4 +121,12 @@ em {
 
 .App {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }

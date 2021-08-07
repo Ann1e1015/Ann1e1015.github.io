@@ -1,0 +1,46 @@
+.author {
+  .head {
+    padding-top: 50px;
+    height: 280px;
+    line-height: 30px;
+    p {
+      font-size: 16px;
+    }
+    img {
+      width: 80px;
+      border-radius: 50%;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+  .markdown-content.about-markdown {
+    display: inline-block;
+    text-align: left;
+    line-height: 25px;
+    margin: 20px;
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    h5 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+    li {
+      font-size: 14px;
+    }
+    ol {
+      margin-left: 20px;
+    }
+    hr {
+      margin: 20px 0 20px 0;
+    }
+  }
+}

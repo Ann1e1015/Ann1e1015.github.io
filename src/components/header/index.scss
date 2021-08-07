@@ -1,0 +1,110 @@
+
+.header {
+  height: 290px;
+  text-align: center;
+  background-image: url("../../../public/banner.png");
+  background-position: center;
+}
+
+.header-container {
+  max-width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  padding: 10px 40px;
+  position: relative;
+}
+
+.home-link {
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff!important;
+}
+
+.right-list {
+  float: right;
+  .menu-icon {
+    cursor: pointer;
+    width: 25px;
+  }
+}
+
+.header-content {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100px;
+  .content-title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .content-description {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+  }
+}
+
+@media screen and  (max-width: 767px) {
+  .right-list {
+    .menu-icon {
+      display: block;
+    }
+    .right-list-main {
+      position: fixed;
+      top: -100%;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      transition: all 0.25s;
+      background-color: rgba(255,255,255,0.6);
+      .list-item {
+        background-color: rgba(255,255,255,0.9);
+      }
+      &.active {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and  (min-width: 768px) {
+  .right-list {
+    .menu-icon {
+      display: none;
+    }
+    li {
+      display: inline-block;
+      margin: 5px;
+      position: relative;
+      .item-link {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .item-link::after {
+        content: '';
+        position: absolute;
+        display: none;
+        bottom: 0px;
+        height: 3px;
+        width: 100%;
+        background-color: #ffe4e1;
+        left: 0;
+      }
+      &:hover .item-link::after {
+        display: block;
+      }
+    }
+  }
+}
+/* 超小屏幕（手机，小于 768px） */
+
+/* 小屏幕（平板，大于等于 768px） */
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+// @media (min-width: @screen-md-min) { ... }
+
+// /* 大屏幕（大桌面显示器，大于等于 1200px） */
+// @media (min-width: @screen-lg-min) { ... }
